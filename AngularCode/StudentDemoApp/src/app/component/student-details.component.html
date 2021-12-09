@@ -1,0 +1,30 @@
+<h1>Student Details</h1>
+<br>
+<button type="button" class="btn btn-success" (click)="onLoadStudentDataClick()">Load Student Record</button>
+<br/><br/>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of studentData">
+            <td>
+                {{item.id}}
+            </td>
+            <td>
+                {{item.name}}
+            </td>
+            <td>
+                {{item.email}}
+            </td>
+            <td>
+                {{item.phoneNo}}
+            </td>
+        </tr>
+    </tbody>
+</table>
